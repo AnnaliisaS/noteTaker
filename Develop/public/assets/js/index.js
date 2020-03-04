@@ -15,8 +15,6 @@ var getNotes = () => {
   });
 };
 
-
-
 // A function for saving a note to the db
 var saveNote = (note) => {
   return $.ajax({
@@ -29,7 +27,7 @@ var saveNote = (note) => {
 // A function for deleting a note from the db
 var deleteNote = function(id) {
   return $.ajax({
-    url: "api/notes/" + id,
+    url: "/api/notes/" + id,
     method: "DELETE"
   });
 };
@@ -144,4 +142,4 @@ $noteText.on("keyup", handleRenderSaveBtn);
 // Gets and renders the initial list of notes
 getAndRenderNotes();
 
-// module.exports = app;
+module.exports = app;
