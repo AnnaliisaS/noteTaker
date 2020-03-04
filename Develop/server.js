@@ -3,7 +3,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require("fs");
-const notesdb = require("./db/db.json");
+const notesdb = require("./db.json");
 
 // Sets up Express App
 // =============================================================================
